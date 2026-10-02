@@ -1,2 +1,0 @@
-# external-cleaner
-KDF SHOP

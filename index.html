@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDF SHOP</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+        :root{--primary:#222;--accent:#e63946;--light:#f8f9fa;}
+        nav{background:var(--primary);color:#fff;padding:15px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}
+        .logo{font-size:1.5rem;font-weight:bold;letter-spacing:2px;}
+        .nav-links a{color:#fff;text-decoration:none;margin-left:25px;font-size:0.95rem;}
+        .nav-links a:hover{color:var(--accent);}
+        .hero{background:linear-gradient(135deg,#111,#444);color:#fff;text-align:center;padding:80px 20px;}
+        .hero h1{font-size:clamp(2rem,6vw,3.5rem);margin-bottom:15px;}
+        .hero p{font-size:1.1rem;color:#ccc;margin-bottom:30px;}
+        .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 30px;text-decoration:none;font-weight:bold;border-radius:4px;transition:0.3s;}
+        .btn:hover{background:#c1121f;}
+        .products{max-width:1200px;margin:60px auto;padding:0 20px;}
+        .section-title{text-align:center;font-size:2rem;margin-bottom:40px;color:#222;}
+        .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+        .product-card{border:1px solid #eee;border-radius:8px;overflow:hidden;transition:0.3s;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+        .product-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+        .product-img{height:200px;background:#ddd;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#888;}
+        .product-info{padding:20px;}
+        .product-name{font-size:1.1rem;font-weight:bold;margin-bottom:10px;color:#222;}
+        .product-price{font-size:1.3rem;color:var(--accent);font-weight:bold;margin-bottom:15px;}
+        .buy-btn{width:100%;background:var(--primary);color:#fff;border:none;padding:10px;font-size:0.95rem;border-radius:4px;cursor:pointer;transition:0.3s;}
+        .buy-btn:hover{background:var(--accent);}
+        .about{background:#f0f0f0;padding:60px 20px;text-align:center;margin-top:80px;}
+        .about h2{margin-bottom:20px;color:#222;}
+        .about p{max-width:600px;margin:0 auto;color:#666;line-height:1.8;}
+        footer{background:var(--primary);color:#fff;text-align:center;padding:30px;margin-top:60px;font-size:0.9rem;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">KDF STORE</div>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>WELCOME TO KDF SHOP</h1>
+        <p>Quality products at the best prices — Order yours today!</p>
+        <a href="#products" class="btn">BUY NOW</a>
+    </section>
+
+    <section class="products" id="products">
+        <h2 class="section-title">OUR PRODUCTS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">📦</div>
+                <div class="product-info">
+                    <div class="product-name">EXTERNAL/CLEANER #1</div>
+                    <div class="product-price">₱ 350</div>
+                    <button class="buy-btn">MESSAGE TO ORDER</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📦</div>
+                <div class="product-info">
+                    <div class="product-name">PC CLEANER #2</div>
+                    <div class="product-price">₱ 300</div>
+                    <button class="buy-btn">MESSAGE TO ORDER</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📦</div>
+                <div class="product-info">
+                    <div class="product-name">PC CHECKER TOOLS #3</div>
+                    <div class="product-price">₱ 200</div>
+                    <button class="buy-btn">MESSAGE TO ORDER</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📦</div>
+                <div class="product-info">
+                    <div class="product-name">NUKER #4</div>
+                    <div class="product-price">₱ 300</div>
+                    <button class="buy-btn">MESSAGE TO ORDER</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📦</div>
+                <div class="product-info">
+                    <div class="product-name">COMING SOON#5</div>
+                    <div class="product-price">₱ ???</div>
+                    <button class="buy-btn">MESSAGE TO ORDER</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📦</div>
+                <div class="product-info">
+                    <div class="product-name">COMING SOON #6</div>
+                    <div class="product-price">₱ ???</div>
+                    <button class="buy-btn">MESSAGE TO ORDER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>ABOUT OUR STORE</h2>
+        <p>We sell high-quality products that you will love. Fast transaction, friendly service. Message us if you have any questions — we are happy to help!</p>
+    </section>
+
+    <section class="about" id="contact" style="background:#fff;">
+        <h2>CONTACT US</h2>
+        <p>📩 Message us on Discord / Instagram<br>
+    </section>
+
+    <footer>
+        © 2026 MY SHOP — ALL RIGHTS RESERVED
+    </footer>
+</body>
+</html>
